@@ -1,0 +1,14 @@
+<div class="main-container" layout="column">
+    <gym-header></gym-header>
+  <div layout="row" flex>
+      <md-button hide-gt-xs show-xs 
+                 ng-click="$ctrl.toogleMap()"
+                 class="md-fab md-accent md-fab-bottom-right" aria-label="Use Android">
+          <md-icon>location_on</md-icon>
+        </md-button>
+      <md-content ng-show="$ctrl.listVisible" flex flex-lg='60' flex-md='70' style="max-height: 700px;">
+          <gym-list flex></gym-list>
+      </md-content>
+      <gym-map ng-show="$ctrl.mapVisible" visible="$ctrl.mapVisible" flex-lg="40" flex-md='30' flex></gym-map>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div layout="column" layout-padding>
+    <div ng-repeat="f in [0, 1, 2, 3, 4, 5]" layout="row" layout-md='row' layout-sm="column" layout-xs="column" layout-padding>
+        <md-card flex ng-repeat="f in [0, 1]" layout="column" layout-align="center center">
+            <md-card-header style="width: 100%" layout-align="center">
+                <md-card-avatar>
+                    <md-icon class="md-avatar-icon">menu</md-icon>
+                </md-card-avatar>
+                <md-card-header-text>
+                    <span class="md-title">GIMNASIO LUNA</span>
+                    <span class="md-subhead">
+                        <span style="font-size: 7pt;">
+                            desde
+                        </span> 
+                        100$
+                    </span>
+                </md-card-header-text>
+            </md-card-header>
+            <jk-carousel
+                show-gt-md
+                data="$ctrl.arrayData"
+                item-template-url="'./app/gym/slide.html'"
+                max-width="450" 
+                max-height="300"
+                auto-slide-time="2000" >
+            </jk-carousel>;
+            <md-card-title style='width: 100%;' layout="row" layout-align="start center">
+
+                <md-card-title-text>
+                    <span class="md-headline">Barcelona - Sant Martí</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content style='width: 100%' layout="row" layout-align="start center">
+                <p>
+                    Sant Martí ofrece un servicio integral de fitness, nutrición,
+                    salud, bienestar, estética y ocio gracias a sus amplias instalaciones y zonas de ejercitacón.
+                </p>
+            </md-card-content>
+        </md-card>
+    </div>
+</div>
+
+
+

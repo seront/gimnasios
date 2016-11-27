@@ -1,0 +1,17 @@
+{
+  "name": "gimnasios-material",
+  "version": "1.0.0",
+  "main": "path/to/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "angular": "^1.5.9",
+    "angular-material": "^1.1.1",
+    "angular-google-maps": "^2.4.0",
+    "angular-jk-carousel": "^0.1.7",
+    "angular-ui-router": "^0.3.2"
+  },
+  "devDependencies": {}
+}
